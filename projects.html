@@ -643,22 +643,22 @@
       </div>
     </footer>
     <script>
-      const buttons = document.querySelectorAll(".btn-back-to-top");
-      buttons.forEach(function (button) {
-        button.addEventListener("click", function (e) {
-          e.preventDefault();
+      // const buttons = document.querySelectorAll(".btn-back-to-top");
+      // buttons.forEach(function (button) {
+        // button.addEventListener("click", function (e) {
+      //     e.preventDefault();
 
-          const scrollDuration = 600;
-          const scrollStep = -window.scrollY / (scrollDuration / 15);
-          const scrollInterval = setInterval(function () {
-            if (window.scrollY !== 0) {
-              window.scrollBy(0, scrollStep);
-            } else {
-              clearInterval(scrollInterval);
-            }
-          }, 15);
-        });
-      });
+      //     const scrollDuration = 600;
+      //     const scrollStep = -window.scrollY / (scrollDuration / 15);
+      //     const scrollInterval = setInterval(function () {
+      //       if (window.scrollY !== 0) {
+      //         window.scrollBy(0, scrollStep);
+      //       } else {
+      //         clearInterval(scrollInterval);
+      //       }
+      //     }, 15);
+      //   });
+      // });
 
       const fullscreenModal = document.getElementById("fullscreenModal");
       fullscreenModal.addEventListener("show.bs.modal", function (event) {
