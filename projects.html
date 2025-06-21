@@ -1,0 +1,705 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Mey's Portofolio - Fullstack Developer, passionate about tech."
+    />
+    <title>Mey • Projects</title>
+    <link
+      rel="shortcut icon"
+      href="images/logo-memey.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="dist/css/bootstrap.min.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Amarante&family=Faculty+Glyphic&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  </head>
+  <body>
+    <main>
+      <nav class="navbar navbar-expand-lg bg-white fixed-top px-md-0 px-3 py-2">
+        <div class="container">
+          <a class="navbar-brand" href="index.html">
+            <img
+              src="images/logo-mey.png"
+              alt="Logo mey - Fullstack Dev"
+              class="img-fluid mt-3"
+              width="80"
+            />
+          </a>
+
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div
+            class="collapse navbar-collapse justify-content-end mt-2"
+            id="navbarNav"
+          >
+            <ul class="navbar-nav align-items-center gap-2">
+              <li class="nav-item">
+                <a class="nav-link mx-2" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link mx-2" href="contact.html">Contact</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link px-3" href="#">Download CV</a>
+              </li>
+              <li>
+                <button id="toggleTheme" class="btn btn-outline-primary py-2 m-3 btn-toggle rounded-circle d-flex align-items-center justify-content-center">
+                  <i class="fa-solid fa-moon"></i>
+                </button>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <div class="container-fluid px-md-5 px-2">
+        <section class="hero-section px-md-5 px-2 me-auto">
+          <!-- <div class="d-flex justify-content-center">
+            <div class="spinner-grow text-primary" role="status">
+              <span class="visually-hidden">Loading...</span>
+            </div>
+          </div> -->
+
+          <div
+            class="projects-title d-flex flex-column justify-content-between align-items-center text-center mb-3"
+          >
+            <h2 class="fw-bold mb-2">
+              Recent <span class="text-primary">Works</span>
+            </h2>
+            <p class="text-center text-secondary">
+              Here are some of the projects I've worked on recently.
+            </p>
+          </div>
+
+          <div
+            class="collapse-project border border-top shadow-sm rounded-4 px-md-5 px-3 py-3 py-md-1 mb-3"
+          >
+            <div
+              class="collapse-header d-flex justify-content-between align-items-center pt-2"
+            >
+              <h5 class="fw-semibold d-flex gap-md-4 gap-1 ms-md-4 ms-0">
+                <span>01.</span>
+                <span>Lucart</span>
+              </h5>
+
+              <div class="d-flex align-items-center gap-2">
+                <a
+                  class="btn btn-primary px-3 btn-sm rounded-pill"
+                  data-bs-toggle="collapse"
+                  href="#collapseExample1"
+                  role="button"
+                  aria-expanded="false"
+                  aria-controls="collapseExample1"
+                >
+                  more
+                </a>
+                <a
+                  href="https://github.com/mey-meysun/lucart-store"
+                  target="_blank"
+                  class="text-decoration-none"
+                >
+                  <img
+                    width="28"
+                    src="https://img.icons8.com/ios-glyphs/60/github.png"
+                    alt="GitHub"
+                    class="img-fluid rounded-circle black-icons"
+                  />
+                </a>
+                <img
+                  src="https://img.icons8.com/?size=25&id=26129&format=png&color=0d6efd"
+                  alt="arrow"
+                  class="invisible"
+                />
+              </div>
+            </div>
+            <div class="info d-flex gap-4 ms-md-4 ms-0 mt-2">
+              <p class="mb-2 text-muted small">PHP • MySQL • Bootstrap</p>
+            </div>
+
+            <div class="collapse collapse-body pt-3" id="collapseExample1">
+              <div class="ms-md-4 ms-0" style="max-width: 700px">
+                <p class="text-start mb-3">
+                  Developed an online custom t-shirt store website with features
+                  including admin dashboard, product management, checkout
+                  system, and category settings.
+                </p>
+
+                <div
+                  class="d-flex justify-content-start align-items-center flex-wrap gap-3 mb-3"
+                >
+                  <img
+                    src="./images/Lucart.jpg"
+                    width="200"
+                    alt="project"
+                    class="img-fluid rounded project-img"
+                    style="cursor: pointer"
+                    data-bs-toggle="modal"
+                    data-bs-target="#fullscreenModal"
+                    data-img="./images/Lucart.jpg"
+                    data-title="Lucart"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="collapse-project border border-top shadow-sm rounded-4 px-md-5 px-3 py-3 py-md-1 mb-3"
+          >
+            <div
+              class="collapse-header d-flex justify-content-between align-items-center pt-2"
+            >
+              <h5 class="fw-semibold d-flex gap-md-4 gap-1 ms-md-4 ms-0">
+                <span>02.</span>
+                <span>Luxton Hotel</span>
+              </h5>
+
+              <div class="d-flex align-items-center gap-2">
+                <a
+                  class="btn btn-primary px-3 btn-sm rounded-pill"
+                  data-bs-toggle="collapse"
+                  href="#collapseExample2"
+                  role="button"
+                  aria-expanded="false"
+                  aria-controls="collapseExample2"
+                >
+                  more
+                </a>
+                <a
+                  href="https://github.com/mey-meysun/Hotel-Luxton"
+                  target="_blank"
+                  class="text-decoration-none"
+                >
+                  <img
+                    width="28"
+                    src="https://img.icons8.com/ios-glyphs/60/github.png"
+                    alt="GitHub"
+                    class="img-fluid rounded-circle black-icons"
+                  />
+                </a>
+                <img
+                  src="https://img.icons8.com/?size=25&id=26129&format=png&color=0d6efd"
+                  alt="arrow"
+                  class="invisible"
+                  style="width: 25px"
+                />
+              </div>
+            </div>
+
+            <div class="info d-flex gap-4 ms-md-4 ms-0 mt-2">
+              <p class="mb-2 text-muted small">Laravel • SQLite • Bootstrap</p>
+            </div>
+
+            <div class="collapse collapse-body pt-3" id="collapseExample2">
+              <div class="ms-md-4 ms-0" style="max-width: 700px">
+                <p class="text-start mb-3">
+                  A team project with 7 members where I was responsible for
+                  developing the backend of a hotel booking website.
+                </p>
+
+                <div
+                  class="d-flex justify-content-start align-items-center flex-wrap gap-3 mb-3"
+                >
+                  <img
+                    src="./images/Luxton.jpg"
+                    width="200"
+                    alt="project"
+                    class="img-fluid rounded project-img"
+                    style="cursor: pointer"
+                    data-bs-toggle="modal"
+                    data-bs-target="#fullscreenModal"
+                    data-img="./images/Luxton.jpg"
+                    data-title="Luxton Hotel"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="collapse-project border border-top shadow-sm rounded-4 px-md-5 px-3 py-3 py-md-1 mb-3"
+          >
+            <div
+              class="collapse-header d-flex justify-content-between align-items-center pt-2"
+            >
+              <h5 class="fw-semibold d-flex gap-md-4 gap-1 ms-md-4 ms-0">
+                <span>03.</span>
+                <span>Dapodik</span>
+              </h5>
+
+              <div class="d-flex align-items-center gap-2">
+                <a
+                  class="btn btn-primary px-3 btn-sm rounded-pill"
+                  data-bs-toggle="collapse"
+                  href="#collapseExample3"
+                  role="button"
+                  aria-expanded="false"
+                  aria-controls="collapseExample3"
+                >
+                  more
+                </a>
+                <a
+                  href="https://github.com/mey-meysun/Dapodik-CRUD"
+                  target="_blank"
+                  class="text-decoration-none"
+                >
+                  <img
+                    width="28"
+                    src="https://img.icons8.com/ios-glyphs/60/github.png"
+                    alt="GitHub"
+                    class="img-fluid rounded-circle black-icons"
+                  />
+                </a>
+                <img
+                  src="https://img.icons8.com/?size=25&id=26129&format=png&color=0d6efd"
+                  alt="arrow"
+                  class="invisible"
+                  style="width: 25px"
+                />
+              </div>
+            </div>
+
+            <div class="info d-flex gap-4 ms-md-4 ms-0 mt-2">
+              <p class="mb-2 text-muted small">Node.js • Express • MongoDB</p>
+            </div>
+
+            <div class="collapse collapse-body pt-3" id="collapseExample3">
+              <div class="ms-md-4 ms-0" style="max-width: 700px">
+                <p class="text-start mb-3">
+                  A Built a school data management web application with basic 
+                  features such as CRUD operations, login and logout system, and form validation.
+                </p>
+
+                <div
+                  class="d-flex justify-content-start align-items-center flex-wrap gap-3 mb-3"
+                >
+                  <img
+                    src="./images/Dapodik.jpg"
+                    width="200"
+                    alt="project"
+                    class="img-fluid rounded project-img"
+                    style="cursor: pointer"
+                    data-bs-toggle="modal"
+                    data-bs-target="#fullscreenModal"
+                    data-img="./images/Dapodik.jpg"
+                    data-title="Dapodik"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="collapse-project border border-top shadow-sm rounded-4 px-md-5 px-3 py-3 py-md-1 mb-3"
+          >
+            <div
+              class="collapse-header d-flex justify-content-between align-items-center pt-2"
+            >
+              <h5 class="fw-semibold d-flex gap-md-4 gap-1 ms-md-4 ms-0">
+                <span>04.</span>
+                <span>Tic Tac Toe Game</span>
+              </h5>
+
+              <div class="d-flex align-items-center gap-2">
+                <a
+                  class="btn btn-primary px-3 btn-sm rounded-pill"
+                  data-bs-toggle="collapse"
+                  href="#collapseExample4"
+                  role="button"
+                  aria-expanded="false"
+                  aria-controls="collapseExample4"
+                >
+                  more
+                </a>
+                <a
+                  href="https://github.com/mey-meysun/tic-tac-toe"
+                  target="_blank"
+                  class="text-decoration-none"
+                >
+                  <img
+                    width="28"
+                    src="https://img.icons8.com/ios-glyphs/60/github.png"
+                    alt="GitHub"
+                    class="img-fluid rounded-circle black-icons"
+                  />
+                </a>
+                <img
+                  src="https://img.icons8.com/?size=25&id=26129&format=png&color=0d6efd"
+                  alt="arrow"
+                  class="invisible"
+                  style="width: 25px"
+                />
+              </div>
+            </div>
+
+            <div class="info d-flex gap-4 ms-md-4 ms-0 mt-2">
+              <p class="mb-2 text-muted small">React</p>
+            </div>
+
+            <div class="collapse collapse-body pt-3" id="collapseExample4">
+              <div class="ms-md-4 ms-0" style="max-width: 700px">
+                <p class="text-start mb-3">
+                  Created a simple two-player web-based Tic Tac Toe game using React, equipped with a move 
+                  history feature that allows players to review and jump to previous moves during the game.
+                </p>
+
+                <div
+                  class="d-flex justify-content-start align-items-center flex-wrap gap-3 mb-3"
+                >
+                  <img
+                    src="./images/tic tac toe.jpg"
+                    width="200"
+                    alt="project"
+                    class="img-fluid rounded project-img"
+                    style="cursor: pointer"
+                    data-bs-toggle="modal"
+                    data-bs-target="#fullscreenModal"
+                    data-img="./images/tic tac toe.jpg"
+                    data-title="Tic Tac Toe Game"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="collapse-project border border-top shadow-sm rounded-4 px-md-5 px-3 py-3 py-md-1 mb-3"
+          >
+            <div
+              class="collapse-header d-flex justify-content-between align-items-center pt-2"
+            >
+              <h5 class="fw-semibold d-flex gap-md-4 gap-1 ms-md-4 ms-0">
+                <span>05.</span>
+                <span>MeyMovies</span>
+              </h5>
+
+              <div class="d-flex align-items-center gap-2">
+                <a
+                  class="btn btn-primary px-3 btn-sm rounded-pill"
+                  data-bs-toggle="collapse"
+                  href="#collapseExample5"
+                  role="button"
+                  aria-expanded="false"
+                  aria-controls="collapseExample5"
+                >
+                  more
+                </a>
+                <a
+                  href="https://github.com/mey-meysun/MeyMovies"
+                  target="_blank"
+                  class="text-decoration-none"
+                >
+                  <img
+                    width="28"
+                    src="https://img.icons8.com/ios-glyphs/60/github.png"
+                    alt="GitHub"
+                    class="img-fluid rounded-circle black-icons"
+                  />
+                </a>
+                <img
+                  src="https://img.icons8.com/?size=25&id=26129&format=png&color=0d6efd"
+                  alt="arrow"
+                  class="invisible"
+                  style="width: 25px"
+                />
+              </div>
+            </div>
+
+            <div class="info d-flex gap-4 ms-md-4 ms-0 mt-2">
+              <p class="mb-2 text-muted small">JS • Bootstrap</p>
+            </div>
+
+            <div class="collapse collapse-body pt-3" id="collapseExample5">
+              <div class="ms-md-4 ms-0" style="max-width: 700px">
+                <p class="text-start mb-3">
+                  Developed a movie search website utilizing the OMDB API, featuring detailed 
+                  movie information and a responsive design.
+                </p>
+
+                <div
+                  class="d-flex justify-content-start align-items-center flex-wrap gap-3 mb-3"
+                >
+                  <img
+                    src="./images/meyMovies.jpg"
+                    width="200"
+                    alt="project"
+                    class="img-fluid rounded project-img"
+                    style="cursor: pointer"
+                    data-bs-toggle="modal"
+                    data-bs-target="#fullscreenModal"
+                    data-img="./images/meyMovies.jpg"
+                    data-title="MeyMovies"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="collapse-project border border-top shadow-sm rounded-4 px-md-5 px-3 py-3 py-md-1 mb-3"
+          >
+            <div
+              class="collapse-header d-flex justify-content-between align-items-center pt-2"
+            >
+              <h5 class="fw-semibold d-flex gap-md-4 gap-1 ms-md-4 ms-0">
+                <span>06.</span>
+                <span>DestyGo</span>
+              </h5>
+
+              <div class="d-flex align-items-center gap-2">
+                <a
+                  class="btn btn-primary px-3 btn-sm rounded-pill"
+                  data-bs-toggle="collapse"
+                  href="#collapseExample6"
+                  role="button"
+                  aria-expanded="false"
+                  aria-controls="collapseExample6"
+                >
+                  more
+                </a>
+                <a
+                  href="https://github.com/mey-meysun/company-profile-destygo.-travel"
+                  target="_blank"
+                  class="text-decoration-none"
+                >
+                  <img
+                    width="28"
+                    src="https://img.icons8.com/ios-glyphs/60/github.png"
+                    alt="GitHub"
+                    class="img-fluid rounded-circle black-icons"
+                  />
+                </a>
+                <a
+                  href="https://mey-meysun.github.io/company-profile-destygo.-travel/"
+                  target="_blank"
+                  class="text-decoration-none text"
+                >
+                  <img
+                    src="https://img.icons8.com/?size=25&id=26129&format=png&color=0d6efd"
+                    alt="arrow"
+                  />
+                </a>
+              </div>
+            </div>
+            <div class="info d-flex gap-4 ms-md-4 ms-0 mt-2">
+              <p class="mb-2 text-muted small">HTML • CSS • JS</p>
+            </div>
+            <div class="collapse collapse-body pt-3" id="collapseExample6">
+              <div class="ms-md-4 ms-0" style="max-width: 700px">
+                <p class="text-start mb-3">
+                  Designed and developed the frontend of a travel website as
+                  part of a team project. Focused on user interface and
+                  responsive layout only.
+                </p>
+
+                <div
+                  class="d-flex justify-content-start align-items-center flex-wrap gap-3 mb-3"
+                >
+                  <img
+                    src="./images/destygo.jpg"
+                    width="200"
+                    alt="project"
+                    class="img-fluid rounded project-img"
+                    style="cursor: pointer"
+                    data-bs-toggle="modal"
+                    data-bs-target="#fullscreenModal"
+                    data-img="./images/destygo.jpg"
+                    data-title="DestyGO"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+      <div
+        class="modal fade"
+        id="fullscreenModal"
+        tabindex="-1"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-fullscreen">
+          <div class="modal-content bg-dark text-white">
+            <div class="modal-header border-0">
+              <h5 class="modal-title" id="modalImageTitle"></h5>
+              <button
+                type="button"
+                class="btn-close btn-close-white"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div
+              class="modal-body d-flex justify-content-center align-items-center"
+            >
+              <img
+                id="modalImage"
+                src=""
+                class="img-fluid"
+                style="object-fit: contain; max-height: 100vh"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="position-relative border-top mt-5">
+      <a
+        href="#"
+        class="btn-back-to-top border-2 text-secondary border-top arrow-btn d-flex align-items-center justify-content-center rounded-circle text-decoration-none"
+      >
+        <i class="fas fa-chevron-up fs-2 opacity-25"></i>
+      </a>
+
+      <div
+        class="d-flex flex-wrap justify-content-center justify-content-md-between py-1 mt-3 mb-3 px-5"
+      >
+        <div class="col-md-4 d-flex align-items-center">
+          <span
+            class="mb-md-0 fs-6 text-center text-md-start mt-3 mt-md-0 text-body-secondary footer-span"
+          >
+            &copy; 2025
+            <a href="/" class="text-decoration-none fw-bold btn-back-to-top"
+              >Mey</a
+            >
+            All Rights Reserved.
+          </span>
+        </div>
+
+        <ul
+          class="socials col-md-4 justify-content-end list-unstyled d-flex align-items-center"
+        >
+          <li class="ms-3">
+            <a
+              href="https://github.com/mey-meysun"
+              target="_blank"
+              class="text-secondary"
+              ><i class="fab fa-github me-3"></i
+            ></a>
+          </li>
+          <li class="ms-3">
+            <a
+              href="https://wa.me/6285715431336"
+              target="_blank"
+              class="text-secondary"
+              ><i class="fab fa-whatsapp me-3"></i
+            ></a>
+          </li>
+          <li class="ms-3">
+            <a
+              href="https://www.linkedin.com/in/wieda-ashkasya-meysun/"
+              target="_blank"
+              class="text-secondary"
+              ><i class="fab fa-linkedin-in me-3"></i
+            ></a>
+          </li>
+          <li class="ms-3">
+            <a
+              href="mailto:meysunwieda@gmail.com"
+              target="_blank"
+              class="text-secondary"
+              ><i class="fas fa-envelope"></i
+            ></a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+    <script>
+      const buttons = document.querySelectorAll(".btn-back-to-top");
+      buttons.forEach(function (button) {
+        button.addEventListener("click", function (e) {
+          e.preventDefault();
+
+          const scrollDuration = 600;
+          const scrollStep = -window.scrollY / (scrollDuration / 15);
+          const scrollInterval = setInterval(function () {
+            if (window.scrollY !== 0) {
+              window.scrollBy(0, scrollStep);
+            } else {
+              clearInterval(scrollInterval);
+            }
+          }, 15);
+        });
+      });
+
+      const fullscreenModal = document.getElementById("fullscreenModal");
+      fullscreenModal.addEventListener("show.bs.modal", function (event) {
+        const button = event.relatedTarget;
+        const imgSrc = button.getAttribute("data-img");
+        const imgTitle = button.getAttribute("data-title");
+
+        fullscreenModal.querySelector("#modalImage").src = imgSrc;
+        fullscreenModal.querySelector("#modalImageTitle").textContent =
+          imgTitle;
+      });
+
+      const toggleThemeBtn = document.getElementById("toggleTheme");
+      const icon = toggleThemeBtn.querySelector("i");
+
+      if (localStorage.getItem("theme") === "dark") {
+        document.body.setAttribute("data-bs-theme", "dark");
+      }
+
+      function updateIcon() {
+        const currentTheme =
+          document.body.getAttribute("data-bs-theme") || "light";
+        if (currentTheme === "dark") {
+          icon.classList.replace("fa-moon", "fa-sun");
+        } else {
+          icon.classList.replace("fa-sun", "fa-moon");
+        }
+      }
+
+      window.addEventListener("load", () => {
+        updateIcon();
+      });
+
+      toggleThemeBtn.addEventListener("click", () => {
+        const currentTheme =
+          document.body.getAttribute("data-bs-theme") || "light";
+        const newTheme = currentTheme === "dark" ? "light" : "dark";
+        document.body.setAttribute("data-bs-theme", newTheme);
+        localStorage.setItem("theme", newTheme);
+        updateIcon();
+      });
+    </script>
+    <script src="script.js"></script>
+    <script src="dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
