@@ -85,6 +85,23 @@ body {
   display: block !important;
 }
 
+#preloader {
+  transition: opacity 0.5s ease;
+}
+
+#preloader.hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+#main-content {
+  transition: opacity 0.5s ease;
+}
+
+#main-content.block {
+  opacity: 1;
+}
+
 .navbar-toggler {
   color: #000000;
   border: none !important;

@@ -76,12 +76,18 @@
                 <a class="nav-link mx-2" href="contact.html">Contact</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link px-3" href="./pdf/CV Wieda Ashkasya Meysun.pdf" download="CV-Wieda-Ashkasya"
+                <a
+                  class="nav-link px-3"
+                  href="./pdf/CV Wieda Ashkasya Meysun.pdf"
+                  download="CV-Wieda-Ashkasya"
                   >Download CV</a
                 >
               </li>
               <li>
-                <button id="toggleTheme" class="btn btn-outline-primary py-2 m-3 btn-toggle rounded-circle d-flex align-items-center justify-content-center">
+                <button
+                  id="toggleTheme"
+                  class="btn btn-outline-primary py-2 m-3 btn-toggle rounded-circle d-flex align-items-center justify-content-center"
+                >
                   <i class="fa-solid fa-moon"></i>
                 </button>
               </li>
@@ -90,16 +96,20 @@
         </div>
       </nav>
 
-      <div class="container-fluid">
+      <div
+        id="preloader"
+        class="position-fixed top-0 start-0 w-100 h-100 bg-white d-flex justify-content-center align-items-center"
+        style="z-index: 9999"
+      >
+        <div class="spinner-border text-primary" role="status">
+          <span class="visually-hidden">Loading...</span>
+        </div>
+      </div>
+
+      <div class="container-fluid" id="main-content">
         <section
           class="hero-section d-flex flex-column justify-content-center align-items-center"
         >
-          <!-- <div class="d-flex justify-content-center">
-          <div class="spinner-grow text-primary" role="status">
-            <span class="visually-hidden">Loading...</span>
-          </div>
-        </div> -->
-
           <h1 class="fw-semibold text-dark fw-bold title-name">
             Hi I'm <span class="typing text-primary"></span>
           </h1>
@@ -419,11 +429,16 @@
                   <div class="d-flex flex-wrap justify-content-center gap-2">
                     <span class="badge bg-primary">Bootstrap</span>
                     <span class="badge bg-warning text-dark">MySQL</span>
-                    <span class="badge bg-primary text-dark bg-opacity-50">PHP</span>
+                    <span class="badge bg-primary text-dark bg-opacity-50"
+                      >PHP</span
+                    >
                   </div>
                 </div>
                 <div class="card-body border-top d-flex justify-content-end">
-                  <a href="https://github.com/mey-meysun/lucart-store" target="_blank">
+                  <a
+                    href="https://github.com/mey-meysun/lucart-store"
+                    target="_blank"
+                  >
                     <img
                       width="30"
                       src="https://img.icons8.com/ios-glyphs/60/github.png"
@@ -462,7 +477,10 @@
                   </div>
                 </div>
                 <div class="card-body border-top d-flex justify-content-end">
-                  <a href="https://github.com/mey-meysun/Hotel-Luxton" target="_blank">
+                  <a
+                    href="https://github.com/mey-meysun/Hotel-Luxton"
+                    target="_blank"
+                  >
                     <img
                       width="30"
                       src="https://img.icons8.com/ios-glyphs/60/github.png"
@@ -474,7 +492,9 @@
             </div>
           </div>
 
-          <a href="projects.html" class="btn btn-primary mt-5 mb-5">See More Projects</a>
+          <a href="projects.html" class="btn btn-primary mt-5 mb-5"
+            >See More Projects</a
+          >
         </section>
 
         <section class="text-center">

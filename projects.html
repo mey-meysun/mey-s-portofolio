@@ -76,12 +76,18 @@
                 <a class="nav-link mx-2" href="contact.html">Contact</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link px-3" href="./pdf/CV Wieda Ashkasya Meysun.pdf" download="CV-Wieda-Ashkasya"
+                <a
+                  class="nav-link px-3"
+                  href="./pdf/CV Wieda Ashkasya Meysun.pdf"
+                  download="CV-Wieda-Ashkasya"
                   >Download CV</a
                 >
               </li>
               <li>
-                <button id="toggleTheme" class="btn btn-outline-primary py-2 m-3 btn-toggle rounded-circle d-flex align-items-center justify-content-center">
+                <button
+                  id="toggleTheme"
+                  class="btn btn-outline-primary py-2 m-3 btn-toggle rounded-circle d-flex align-items-center justify-content-center"
+                >
                   <i class="fa-solid fa-moon"></i>
                 </button>
               </li>
@@ -90,14 +96,18 @@
         </div>
       </nav>
 
-      <div class="container-fluid px-md-5 px-2">
-        <section class="hero-section px-md-5 px-2 me-auto">
-          <!-- <div class="d-flex justify-content-center">
-            <div class="spinner-grow text-primary" role="status">
-              <span class="visually-hidden">Loading...</span>
-            </div>
-          </div> -->
+      <div
+        id="preloader"
+        class="position-fixed top-0 start-0 w-100 h-100 bg-white d-flex justify-content-center align-items-center"
+        style="z-index: 9999"
+      >
+        <div class="spinner-border text-primary" role="status">
+          <span class="visually-hidden">Loading...</span>
+        </div>
+      </div>
 
+      <div class="container-fluid" id="main-content">
+        <section class="hero-section px-md-5 px-2 me-auto">
           <div
             class="projects-title d-flex flex-column justify-content-between align-items-center text-center mb-3"
           >
@@ -304,8 +314,9 @@
             <div class="collapse collapse-body pt-3" id="collapseExample3">
               <div class="ms-md-4 ms-0" style="max-width: 700px">
                 <p class="text-start mb-3">
-                  A Built a school data management web application with basic 
-                  features such as CRUD operations, login and logout system, and form validation.
+                  A Built a school data management web application with basic
+                  features such as CRUD operations, login and logout system, and
+                  form validation.
                 </p>
 
                 <div
@@ -377,8 +388,9 @@
             <div class="collapse collapse-body pt-3" id="collapseExample4">
               <div class="ms-md-4 ms-0" style="max-width: 700px">
                 <p class="text-start mb-3">
-                  Created a simple two-player web-based Tic Tac Toe game using React, equipped with a move 
-                  history feature that allows players to review and jump to previous moves during the game.
+                  Created a simple two-player web-based Tic Tac Toe game using
+                  React, equipped with a move history feature that allows
+                  players to review and jump to previous moves during the game.
                 </p>
 
                 <div
@@ -450,8 +462,8 @@
             <div class="collapse collapse-body pt-3" id="collapseExample5">
               <div class="ms-md-4 ms-0" style="max-width: 700px">
                 <p class="text-start mb-3">
-                  Developed a movie search website utilizing the OMDB API, featuring detailed 
-                  movie information and a responsive design.
+                  Developed a movie search website utilizing the OMDB API,
+                  featuring detailed movie information and a responsive design.
                 </p>
 
                 <div
@@ -642,65 +654,7 @@
         </ul>
       </div>
     </footer>
-    <script>
-      // const buttons = document.querySelectorAll(".btn-back-to-top");
-      // buttons.forEach(function (button) {
-        // button.addEventListener("click", function (e) {
-      //     e.preventDefault();
 
-      //     const scrollDuration = 600;
-      //     const scrollStep = -window.scrollY / (scrollDuration / 15);
-      //     const scrollInterval = setInterval(function () {
-      //       if (window.scrollY !== 0) {
-      //         window.scrollBy(0, scrollStep);
-      //       } else {
-      //         clearInterval(scrollInterval);
-      //       }
-      //     }, 15);
-      //   });
-      // });
-
-      const fullscreenModal = document.getElementById("fullscreenModal");
-      fullscreenModal.addEventListener("show.bs.modal", function (event) {
-        const button = event.relatedTarget;
-        const imgSrc = button.getAttribute("data-img");
-        const imgTitle = button.getAttribute("data-title");
-
-        fullscreenModal.querySelector("#modalImage").src = imgSrc;
-        fullscreenModal.querySelector("#modalImageTitle").textContent =
-          imgTitle;
-      });
-
-      const toggleThemeBtn = document.getElementById("toggleTheme");
-      const icon = toggleThemeBtn.querySelector("i");
-
-      if (localStorage.getItem("theme") === "dark") {
-        document.body.setAttribute("data-bs-theme", "dark");
-      }
-
-      function updateIcon() {
-        const currentTheme =
-          document.body.getAttribute("data-bs-theme") || "light";
-        if (currentTheme === "dark") {
-          icon.classList.replace("fa-moon", "fa-sun");
-        } else {
-          icon.classList.replace("fa-sun", "fa-moon");
-        }
-      }
-
-      window.addEventListener("load", () => {
-        updateIcon();
-      });
-
-      toggleThemeBtn.addEventListener("click", () => {
-        const currentTheme =
-          document.body.getAttribute("data-bs-theme") || "light";
-        const newTheme = currentTheme === "dark" ? "light" : "dark";
-        document.body.setAttribute("data-bs-theme", newTheme);
-        localStorage.setItem("theme", newTheme);
-        updateIcon();
-      });
-    </script>
     <script src="script.js"></script>
     <script src="dist/js/bootstrap.bundle.min.js"></script>
   </body>
